@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-blog-github"]=this["webpackJsonpreact-blog-github"]||[]).push([[512],{711:function(e,t){Prism.languages.yang={comment:/\/\*[\s\S]*?\*\/|\/\/.*/,string:{pattern:/"(?:[^\\"]|\\.)*"|'[^']*'/,greedy:!0},keyword:{pattern:/(^|[{};\r\n][ \t]*)[a-z_][\w.-]*/i,lookbehind:!0},namespace:{pattern:/(\s)[a-z_][\w.-]*(?=:)/i,lookbehind:!0},boolean:/\b(?:false|true)\b/,operator:/\+/,punctuation:/[{};:]/}}}]);
+//# sourceMappingURL=512.e7d51fc5.chunk.js.map

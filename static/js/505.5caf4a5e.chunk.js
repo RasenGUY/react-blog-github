@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-blog-github"]=this["webpackJsonpreact-blog-github"]||[]).push([[505],{704:function(a,e){!function(a){function e(e,t){a.languages[e]&&a.languages.insertBefore(e,"comment",{"doc-comment":t})}var t=a.languages.markup.tag,n={pattern:/\/\/\/.*/,greedy:!0,alias:"comment",inside:{tag:t}},s={pattern:/'''.*/,greedy:!0,alias:"comment",inside:{tag:t}};e("csharp",n),e("fsharp",n),e("vbnet",s)}(Prism)}}]);
+//# sourceMappingURL=505.5caf4a5e.chunk.js.map

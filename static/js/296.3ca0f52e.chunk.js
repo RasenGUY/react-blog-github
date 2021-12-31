@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-blog-github"]=this["webpackJsonpreact-blog-github"]||[]).push([[296],{495:function(b,t){Prism.languages["nand2tetris-hdl"]={comment:/\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,keyword:/\b(?:CHIP|IN|OUT|PARTS|BUILTIN|CLOCKED)\b/,boolean:/\b(?:true|false)\b/,function:/\b[A-Za-z][A-Za-z0-9]*(?=\()/,number:/\b\d+\b/,operator:/=|\.\./,punctuation:/[{}[\];(),:]/}}}]);
+//# sourceMappingURL=296.3ca0f52e.chunk.js.map
