@@ -12,7 +12,7 @@ export const config = {
   // and fill the client ID & secret
   enableOAuth: true,
   OAuthClientID: process.env.REACT_APP_GITHUB_OAUTH_CLIENT_ID,
-  OAuthSecret: process.env.REACT_APP_GITHUB_OAUTH_SECRET, // oauth secret
+  OAuthSecret: process.env.REACT_APP_GITHUB_OAUTH_SECRET, 
 
   // Your Personal Blog Title
   title : "Fernando Trouw" ,
