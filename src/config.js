@@ -15,7 +15,7 @@ export const config = {
   OAuthSecret: process.env.REACT_APP_GITHUB_OAUTH_SECRET, 
 
   // Your Personal Blog Title
-  title : "Fernando Trouw" ,
+  title : "Personal Blog" ,
 
   // Your Personal Blog Subtitle
   subtitle : "Smart Contract Developer & Fullstack Engineer",
