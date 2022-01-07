@@ -164,7 +164,7 @@ export default function BlogHome() {
   }
   
   // Adds a new comment 
-  const handleSubmitComment = async (e, value) => {
+  const handleSubmitComment = async (e, value, stateUpdateFunc) => {
     e.preventDefault();
     const user = await getAuthenticatedUser();  
     await userClient(userToken).mutate({
@@ -188,7 +188,14 @@ export default function BlogHome() {
     
     // update on the front-end
     setPostComments([comment, ...postComments,]);
+    
+    // updates the state of the editory after 0.5 seconds
+    setTimeout(()=>{
+      stateUpdateFunc("");
+    }, 500)
+    
   }
+
   
   useEffect(() => {
     if (!loading) {

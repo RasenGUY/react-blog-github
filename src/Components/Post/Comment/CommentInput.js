@@ -27,7 +27,7 @@ export const CommentInput = ({updateComments}) => {
     userToken ?
     <> 
      <Editor value={value} onChange={setValue} height="120" visiableDragbar={false} preview={"edit"} />
-     <CommentSubmitButton disabled={value === "" ? true : false} onClick={e => updateComments(e, value)}>
+     <CommentSubmitButton disabled={value === "" ? true : false} onClick={e => updateComments(e, value, setValue)}>
        submit
      </CommentSubmitButton>
     </>
