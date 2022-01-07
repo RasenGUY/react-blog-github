@@ -190,10 +190,8 @@ export default function BlogHome() {
     setPostComments([comment, ...postComments,]);
     
     // updates the state of the editory after 0.5 seconds
-    setTimeout(()=>{
-      stateUpdateFunc("");
-    }, 500)
-    
+    stateUpdateFunc("");
+
   }
 
   
