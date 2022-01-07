@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import readingTime from "reading-time";
-import { useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import {
   CardContainer,
@@ -13,10 +13,12 @@ import {
 
 export const Card = ({ blog }) => {
   const [labels, setLabels] = useState([]);
-  const history = useHistory();
+  const location = useLocation();
+  let navigate = useNavigate(); 
 
+  console.log(location);
   const openBlog = (title, number) => {
-    history.push(`/blog/${title}/${number}`);
+    navigate(`blog/${title}/${number}`);
   }
 
   useEffect(() => {

@@ -1,20 +1,24 @@
 import React from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { 
+  BrowserRouter, 
+  Routes, 
+  Route 
+} from "react-router-dom";
 
 import Blog from "./Containers/Blog"
 import BlogPost from "./Containers/BlogPost";
 
-var createBrowserHistory = require("history").createBrowserHistory;
-const history = createBrowserHistory();
 
-const Router = () => {
+const Router = ({children}) => {
   return (
-    <HashRouter history={history}>
-      <Switch>
-        <Route exact path="/" component={Blog} />
-        <Route exact path="/blog/:title/:issueNumber" component={BlogPost}/>
-      </Switch>
-    </HashRouter>
+    <BrowserRouter >
+      <Routes>
+        <Route path="/" element={<Blog />} />
+        <Route path="/blog/:title/:issueNumber" element={<BlogPost />}/>
+        <Route path="/*" element={<h1>Page does not Exists</h1>}/>
+      </Routes>
+      {children}
+    </BrowserRouter>
   );
 };
 

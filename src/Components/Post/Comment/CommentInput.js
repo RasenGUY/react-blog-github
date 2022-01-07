@@ -33,8 +33,8 @@ export const CommentInput = ({updateComments}) => {
     </>
     :   
     <> 
-      <Editor value={value} onChange={setValue} height="120" visiableDragbar={false} preview={"edit"} blur/>
-      <CommentSubmitButton disabled={true} blur>
+      <Editor value={value} onChange={setValue} height="120" visiableDragbar={false} preview={"edit"} blur="true"/>
+      <CommentSubmitButton disabled={true} blur="true">
         Submit
       </CommentSubmitButton>
     </>

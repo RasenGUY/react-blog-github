@@ -12,7 +12,7 @@ import { GlobalStyles } from "./Components/Theme/GlobalStyles";
 import { lightTheme, darkTheme } from "./Components/Theme/Theme";
 import  { useDarkMode } from "./Components/Theme/useDarkMode";
 
-const Application = () => {
+const App = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
@@ -29,15 +29,16 @@ const Application = () => {
           <meta name="description" content={config.subtitle} />
           <meta name="theme-color" content={config.header.backgroundColor} />
       </Helmet>
-      <ApolloProvider client={client}>
-        <ThemeProvider theme={themeMode} toggleTheme={themeToggler}>
-          <GlobalStyles />
-          <Router />
-          <Toggle theme={theme} toggleTheme={themeToggler} />
-        </ThemeProvider>
-      </ApolloProvider>
+        <ApolloProvider client={client}>
+          <ThemeProvider theme={themeMode} toggleTheme={themeToggler}>
+            <Router>
+            <GlobalStyles />
+            <Toggle theme={theme} toggleTheme={themeToggler} />
+          </Router>
+          </ThemeProvider>
+        </ApolloProvider>
     </>
   )
 };
 
-export default Application;
+export default App;
