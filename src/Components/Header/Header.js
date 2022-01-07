@@ -4,16 +4,16 @@ import {
     HeaderWrapper,
     HeaderTitle,
     HeaderSubtitle,
-    GithubLogin
+    GithubLogin,
+    PortofolioLink
 } from './';
 import { config } from "../../config";
-import { BackButton } from "../Post";
 
 export const Header = () => {
     return (
         <HeaderContainer>
             <GithubLogin isAbsolute={true} />
-            <BackButton>Portofolio</BackButton>
+            <PortofolioLink to="https://www.rasguymedia.com" >Portofolio</PortofolioLink>
             <HeaderWrapper>
                 <HeaderTitle>{config.title}</HeaderTitle>
                 <HeaderSubtitle>{config.subtitle}</HeaderSubtitle>
